@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import './App.css';
+import { GlobalProvider } from "./context/GlobalState";
 import Home from "./components/Home/Home";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
@@ -11,14 +12,16 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/articles" element={<ListNews />} />
-          <Route path="/new-article" element={<Form />} />
-          <Route path="*" element={<Navigate to="/" />}  />
-        </Routes>
-        <Footer />
+        <GlobalProvider>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/list" element={<ListNews />} />
+            <Route path="/form" element={<Form />} />
+            <Route path="*" element={<Navigate to="/" />}  />
+          </Routes>
+          <Footer />
+        </GlobalProvider>
       </BrowserRouter>
     </div>
   );

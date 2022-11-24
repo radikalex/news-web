@@ -13,8 +13,8 @@ const Header = () => {
 
           <div className='navLinks-container'>
             <span><Link to="/">Home</Link></span>
-            <span><Link to="/articles">Articles</Link></span>
-            <span><Link to="/new-article">Add new article</Link></span>
+            <span><Link to="/list">Articles</Link></span>
+            <span><Link to="/form">Add new article</Link></span>
           </div>
             
         </nav>

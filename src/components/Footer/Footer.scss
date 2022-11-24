@@ -1,0 +1,14 @@
+footer {
+    height: 5vh;
+    background-color: red;
+    background-color: #b7adad;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+
+    .contenedor-copyright {
+        display: flex;
+        gap: 10px;
+    }
+}
