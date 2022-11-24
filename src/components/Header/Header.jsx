@@ -8,7 +8,7 @@ const Header = () => {
         <nav>
 
           <div className='logo'>
-            <span>Articles Alex</span>
+            <span>Radikalex Post</span>
           </div>
 
           <div className='navLinks-container'>

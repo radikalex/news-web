@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&display=swap');
+
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.new-card {
+    width: 20%;
+    padding: 0 20px;
+    border-right: 2px solid black;
+
+    .new-card-title {
+        text-align: center;
+        line-height: normal;
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+        font-size: 28px;
+        text-transform: uppercase;
+        padding: 10px 0 10px 0;
+    }
+
+    .new-card-byline {
+        text-align: center;
+        font-size: 14px;
+        font-style: italic;
+        padding: 10px 0 10px 0;
+        margin: 5px 0px 15px 0px;
+    }
+
+    .new-card-byline::before {
+        content: '';
+        height: 7px;
+        width: 100px;
+        display: block;
+        margin: 0 auto;
+        border-top: 1px solid #2f2f2f;
+    }
+
+    .new-card-byline::after {
+        content: '';
+        height: 7px;
+        width: 100px;
+        display: block;
+        margin: 0 auto;
+        border-bottom: 1px solid #2f2f2f;
+    }
+
+    .new-card-body {
+        padding-bottom: 40px;
+        p {
+            padding: 5px 10px 0px 10px;
+        }
+
+        .new-card-image {
+            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+            width: 100%;
+        }
+    }
+}
+
+.new-card:nth-child(5n) {
+    border-right: 0px solid black;
+}
+

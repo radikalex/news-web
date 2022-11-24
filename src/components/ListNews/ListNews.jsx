@@ -1,5 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import { GlobalContext } from "../../context/GlobalState";
+import News from "../News/News";
 import './ListNews.scss'
 
 const ListNews = () => {
@@ -11,8 +12,12 @@ const ListNews = () => {
 
   return (
     <main>
-      <div>
-        sbafd
+      <div className="newspaper-container">
+        <div className="newspaper">
+          <div className="newspaper-header">Radikalex Post</div>
+          <div className="newspaper-subhead">{Date().slice(0, 16)}</div>
+          <News />
+        </div>
       </div>
     </main>
   )

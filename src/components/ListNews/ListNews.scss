@@ -2,3 +2,37 @@ main {
     min-height: 87vh;
     // background-color: aqua;
 }
+
+.newspaper-container {
+    display: flex;
+    justify-content: center;
+    padding: 2% 0;
+}
+
+.newspaper {
+    background-image: url('../../assets/paper.webp');
+    background-size: 100% 100%;
+    width: 90%;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.newspaper-header {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 80px;
+    text-transform: uppercase;
+    line-height: 72px;
+    margin-bottom: 20px;
+    margin: 40px 0;
+}
+
+.newspaper-subhead {
+    text-transform: uppercase;
+    border-bottom: 2px solid #2f2f2f;
+    border-top: 2px solid #2f2f2f;
+    padding: 12px 0 12px 0;
+    text-align: center;
+    margin: 20px 0;
+}
