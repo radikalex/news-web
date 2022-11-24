@@ -1,0 +1,34 @@
+$header-height: 8vh;
+
+nav {
+    height: $header-height;
+    color: white;
+    background-color: rgb(44, 40, 40);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    align-items: center;
+    position: sticky;
+    top: 0;
+
+    .logo {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .navLinks-container {
+        display: flex;
+        gap: 50px;
+    }
+    
+    a {
+        all: unset;
+        font-size: 20px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    
+    a:hover {
+        color: gray;
+    }
+}
