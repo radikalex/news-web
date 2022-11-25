@@ -1,0 +1,46 @@
+.form-view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .form-container {
+        border: 2px solid black;
+        width: 80%;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            padding: 50px 100px;
+
+            input {
+                padding: 10px 10px;
+                border-radius: 10px;
+                border: 1px solid black;
+            }
+
+            textarea {
+                padding: 10px 10px;
+                border: 1px solid black;
+                border-radius: 10px;
+                resize: none;
+            }
+
+            label {
+                text-align: start;
+                font-weight: 600;
+            }
+
+            .submit {
+                margin-top: 20px;
+                width: 20%;
+                align-self: flex-end;
+                padding: 10px 20px;
+            }
+
+            h1 {
+                text-align: center;
+            }
+        }
+    }
+}
