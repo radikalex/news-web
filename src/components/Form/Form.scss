@@ -5,6 +5,8 @@
 
     .form-container {
         border: 2px solid black;
+        background-image: url('../../assets/paper.webp');
+        background-size: 100% 100%;
         width: 80%;
 
         form {
@@ -40,6 +42,20 @@
 
             h1 {
                 text-align: center;
+            }
+
+            .validation-error {
+                margin-top: 10px;
+                font-weight: bold;
+                align-self: center;
+                color: red;
+            }
+
+            .validation-success {
+                margin-top: 10px;
+                font-weight: bold;
+                align-self: center;
+                color: green;
             }
         }
     }

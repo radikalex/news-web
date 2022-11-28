@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 .news-container {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    height: 7500px;
 }
 
 .new-card {
@@ -15,18 +15,19 @@
     .new-card-title {
         text-align: center;
         line-height: normal;
-        font-size: 28px;
-        text-transform: uppercase;
         padding: 10px 0 10px 0;
     }
 
     .playfair {
         font-family: 'Playfair Display', serif;
+        font-size: 28px;
+        text-transform: uppercase;
         font-weight: 700;
     }
 
-    .blue {
-        font-family: 'Times New Roman', Times, serif;
+    .noticia {
+        font-family: 'Noticia Text', serif;
+        font-size: 24px;
         font-weight: 700;
     }
 
@@ -79,7 +80,8 @@
         width: 100%;
     }
   }
-// .new-card:nth-child(5n) {
-//     border-right: 0px solid black;
-// }
+  
+.new-card:nth-child(5n) {
+    border-right: 0px solid black;
+}
 

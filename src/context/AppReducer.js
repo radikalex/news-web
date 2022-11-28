@@ -4,6 +4,12 @@ const articles = (state, action) => {
             return {
                 ...state,
                 articles: action.payload,
+                loading: false
+            };
+        case "LOADING":
+            return {
+                ...state,
+                loading: true
             };
         default:
             return state;

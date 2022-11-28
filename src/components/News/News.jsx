@@ -4,7 +4,7 @@ import './News.scss'
 
 const News = () => {
     const { articles } = useContext(GlobalContext);
-    const fonts = ['playfair', 'red']
+    const fonts = ['playfair', 'noticia']
 
     const news = articles.filter(article => article.title !== '').map((article, idx) => {
         return (

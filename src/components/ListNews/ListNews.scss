@@ -5,13 +5,33 @@ main {
 
 .newspaper-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 2% 0;
+    margin-bottom: 70px;
 }
+
+form.form-section {
+    margin-bottom: 80px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    .label-section {
+        font-size: 30px;
+    }
+
+    .section {
+        padding: 5px;
+        font-size: 20px;
+    }
+}
+
 
 .newspaper {
     background-image: url('../../assets/paper.webp');
     background-size: 100% 100%;
+    box-shadow: 0px 5px 100px 15px black;
     width: 90%;
     border: 2px solid black;
     border-radius: 20px;
