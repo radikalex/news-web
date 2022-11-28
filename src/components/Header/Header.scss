@@ -1,3 +1,8 @@
+@font-face {
+    font-family: chunk;
+    src:  url('../../assets/fonts/Chunk.ttf');
+}
+
 $header-height: 8vh;
 
 nav {
@@ -12,18 +17,29 @@ nav {
     top: 0;
 
     .logo {
-        font-size: 24px;
-        font-weight: 700;
+        display: flex;
+        align-items: flex-end;
+        gap: 10px;
+
+        span {
+            font-size: 28px;
+            font-weight: 400;
+            font-family: chunk;
+        }
+    }
+
+    .image-logo {
+        width: 50px;
     }
 
     .navLinks-container {
         display: flex;
-        gap: 50px;
+        gap: 100px;
     }
     
     a {
         all: unset;
-        font-size: 20px;
+        font-size: 22px;
         font-weight: 500;
         cursor: pointer;
     }

@@ -3,49 +3,71 @@
     src:  url('../../assets/fonts/ChunkFivePrint.ttf');
 }
 
-main {
-    min-height: 87vh;
-    // background-color: aqua;
-}
-
 .newspaper-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2% 0;
-    margin-bottom: 70px;
+    padding-bottom: 70px;
 }
 
 
 
 form.form-section {
     margin-bottom: 80px;
-    width: 90%;
+    background-image: url('../../assets/paper.webp');
+    background-size: 100% 100%;
+    padding: 20px 10%;
+    width: 100%;
     display: flex;
-    gap: 20px;
+    gap: 10px;
     flex-direction: column;
     align-items: center;
 
-    .filter {
-        width: 100%;
-        padding: 15px;
-        border-radius: 5px;
-        font-size: 20px;
+    h1 {
+        align-self: flex-start;
     }
 
-    .section-container {
+    .filters-container {
         display: flex;
-        gap: 20px;
+        align-self: flex-start;
+        justify-content: space-around;
+        gap: 70px;
+        width: 100%;
         align-items: center;
-        .label-section {
-            font-size: 30px;
+
+        .section-filter {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .label-section, .label-title {
+            font-size: 26px;
         }
     
         .section {
-            padding: 5px;
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 5px;
             font-size: 20px;
         }
+
+        .title-filter {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex: 1;
+
+            .filter {
+                width: 100%;
+                padding: 10px;
+                border-radius: 5px;
+                font-size: 20px;
+                border: 1px solid black;
+            }
+        }
+        
     }
 }
 
@@ -63,9 +85,8 @@ form.form-section {
     text-align: center;
     font-family: chunkPrint;
     font-weight: 500;
-    font-size: 80px;
+    font-size: 4.25vw;
     text-transform: uppercase;
-    line-height: 72px;
     margin-bottom: 20px;
     margin: 40px 0;
 }

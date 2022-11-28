@@ -17,7 +17,6 @@ export const GlobalProvider = ({children}) => {
         dispatch({
             type: "LOADING"
         });
-        state.loading = true;
         const api_key = '1vZukSAhOVvA4beCvAzVNIZWnNJVdNWp';
         const res = await axios.get(`https://api.nytimes.com/svc/topstories/v2/${section}.json?api-key=${api_key}`);
         const localStorage_news = JSON.parse(localStorage.getItem('localStorage_news')) || [];

@@ -1,4 +1,36 @@
-main {
-    min-height: 87vh;
-    // background-color: black;
+.home-view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .home-container {
+        background-image: url('../../assets/paper.webp');
+        width: 80%;
+        border-radius: 5px;
+        box-shadow: 0px 5px 100px 15px black;
+        padding: 50px 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 20px;
+
+        h1 {
+            text-align: center;
+            font-size: 45px;
+        }
+
+        ul, li {
+            list-style-type: none;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            .page {
+                font-weight: bold;
+                text-decoration: underline;
+            }
+        }
+    }
 }

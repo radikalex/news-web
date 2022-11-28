@@ -3,3 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+main {
+    min-height: 87vh;
+    background-image: url('./assets/background.jpg');
+}

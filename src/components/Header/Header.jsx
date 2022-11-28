@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import Logo from "../../assets/logo.png"
 import './Header.scss'
 
 const Header = () => {
@@ -8,7 +9,8 @@ const Header = () => {
         <nav>
 
           <div className='logo'>
-            <span>Radikalex Post</span>
+            <span>RADIKALEX POST</span>
+            <img src={Logo} alt="logo" className='image-logo'/>
           </div>
 
           <div className='navLinks-container'>
