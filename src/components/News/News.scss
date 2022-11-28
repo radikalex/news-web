@@ -2,10 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
+@font-face {
+    font-family: oldNewspaper;
+    src:  url('../../assets/fonts/OldNewspaperTypes.ttf');
+}
+
+@font-face {
+    font-family: chomsky;
+    src:  url('../../assets/fonts/Chomsky.otf');
+}
+
+@font-face {
+    font-family: eroded;
+    src:  url('../../assets/fonts/Eroded.ttf');
+}
+
 .news-container {
     display: flex;
     flex-wrap: wrap;
 }
+
 
 .new-card {
     width: 20%;
@@ -29,6 +45,18 @@
         font-family: 'Noticia Text', serif;
         font-size: 24px;
         font-weight: 700;
+    }
+
+    .chomsky {
+        font-family: chomsky;
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    .eroded {
+        font-family: eroded;
+        font-size: 40px;
+        font-weight: 300;
     }
 
     .new-card-byline {
@@ -60,12 +88,13 @@
     .new-card-body {
         padding-bottom: 40px;
         p {
+            font-family: oldNewspaper;
             padding: 5px 10px 0px 10px;
         }
 
         .new-card-image {
-            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-            filter: grayscale(100%);
+            -webkit-filter: brightness(70%) contrast(150%) saturate(0%) brightness(150%); /* Safari 6.0 - 9.0 */
+            filter: brightness(70%) contrast(150%) saturate(0%) brightness(150%);
             width: 100%;
         }
     }
