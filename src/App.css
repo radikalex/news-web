@@ -8,3 +8,15 @@ main {
     min-height: 87vh;
     background-image: url('./assets/background.jpg');
 }
+
+@media (max-width: 800px) {
+    main {
+        min-height: 84vh;
+    }
+}
+
+@media (max-width: 550px) {
+    main {
+        min-height: 82vh;
+    }
+}

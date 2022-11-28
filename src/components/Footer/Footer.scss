@@ -11,3 +11,26 @@ footer {
         gap: 10px;
     }
 }
+
+@media (max-width: 550px) {
+    footer {
+        height: 7vh;
+    
+        .contenedor-copyright {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 0px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    footer {
+    
+        .contenedor-copyright {
+            font-size: 12px;
+        }
+    }
+}

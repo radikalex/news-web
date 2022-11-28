@@ -50,7 +50,6 @@ form.form-section {
             padding: 10px;
             font-size: 20px;
             border-radius: 5px;
-            font-size: 20px;
         }
 
         .title-filter {
@@ -87,7 +86,6 @@ form.form-section {
     font-weight: 500;
     font-size: 4.25vw;
     text-transform: uppercase;
-    margin-bottom: 20px;
     margin: 40px 0;
 }
 
@@ -98,4 +96,98 @@ form.form-section {
     padding: 12px 0 12px 0;
     text-align: center;
     margin: 20px 0;
+}
+
+@media (max-width: 850px) {
+    .newspaper-header {
+        font-size: 5vw;
+        margin: 35px 0;
+    }
+
+    form.form-section {
+        margin-bottom: 70px;
+        padding: 20px 5%;
+
+        .filters-container {
+            gap: 50px;
+    
+            .label-section, .label-title {
+                font-size: 24px;
+            }
+        
+            .section {
+                font-size: 18px;
+            }
+    
+            .title-filter {
+    
+                .filter {
+                    font-size: 18px;
+                }
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .newspaper-header {
+        font-size: 5.25vw;
+        margin: 30px 0;
+    }
+    
+    .newspaper-subhead {
+        padding: 8px 0 8px 0;
+        font-size: 14px;
+    }
+
+    form.form-section {
+        margin-bottom: 60px;
+        .filters-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+
+            .title-filter {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .newspaper-header {
+        font-size: 5.75vw;
+        margin: 25px 0;
+    }
+
+    form.form-section {
+        margin-bottom: 40px;
+        h1 {
+            font-size: 26px;
+        }
+
+        .filters-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+
+            .label-section, .label-title {
+                font-size: 20px;
+            }
+        
+            .section {
+                font-size: 14px;
+            }
+    
+            .title-filter {
+    
+                .filter {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
 }
